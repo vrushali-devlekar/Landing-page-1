@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sigmar One", sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+#main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #69665e;
+  overflow: hidden;
+}
+#part-1 {
+  height: 100%;
+  width: 20%;
+  background-color: #2928266c;
+}
+#part-2 {
+  height: 100%;
+  width: 68%;
+  overflow: hidden;
+  opacity: 10;
+  background-image: url(img.png);
+  background-size: cover;
+  background-position: center;
+}
+#overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(27, 27, 27, 0.534);
+}
+#part-3 {
+  height: 100%;
+  width: 12%;
+  background-color: #2928266c;
+}
+#text {
+  position: absolute;
+  /* background-color: red; */
+  /* width: 350px; */
+  left: 6%;
+  top: 52%;
+  transform: translate(0, -50%);
+  z-index: 5;
+}
+#text h1 {
+  font-size: 54px;
+  font-weight: 900;
+  letter-spacing: 5px;
+  line-height: 49px;
+  text-transform: uppercase;
+  color: rgb(206, 202, 202);
+}
+#text > .tx-1::after {
+  content: "";
+  position: absolute;
+  top: 38%;
+  left: 25%; /* places it right after text */
+  transform: translateY(-50%);
+  width: 260px; /* adjust width */
+  height: 40px; /* adjust height */
+  background: rgb(206, 202, 202);
+  margin-left: 10px; /* spacing from text */
+}
+#text > .tx-2::after {
+  content: "";
+  position: absolute;
+  top: 63%;
+  right: 0%; /* places it right after text */
+  transform: translateY(-50%);
+  width: 58px; /* adjust width */
+  height: 40px; /* adjust height */
+  background: rgb(206, 202, 202);
+  margin-left: 10px; /* spacing from text */
+}
+#text > .tx-3::after {
+  content: "";
+  position: absolute;
+  top: 88%;
+  right: 0%; /* places it right after text */
+  transform: translateY(-50%);
+  width: 125px; /* adjust width */
+  height: 40px; /* adjust height */
+  background: rgb(206, 202, 202);
+  margin-left: 10px; /* spacing from text */
+}
+#small-img {
+  height: 330px;
+  width: 250px;
+  position: absolute;
+  background-image: url(img2.png);
+  background-size: cover;
+  background-position: center;
+  right: 5%;
+  top: 52%;
+  transform: translate(0, -50%);
+}
+#small-img #overlay {
+  background-color: #fdfbfb1f;
+}
+#vertical {
+  position: absolute;
+  width: 100%;
+  right: -42%;
+  bottom: -8%;
+  z-index: 10;
+  transform-origin: 0% 0%;
+}
+#vertical h1 {
+  font-size: 54px;
+  letter-spacing: 8px;
+  transform: rotate(90deg);
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: rgb(206, 202, 202);
+  color: transparent;
+}
+#nav {
+  position: absolute;
+  width: 250px;
+  left: 15%;
+  top: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgba(185, 180, 180, 0.932);
+}
+#nav h5 {
+  font-size: 20px;
+  font-family: Tahoma, sans-serif;
+}
