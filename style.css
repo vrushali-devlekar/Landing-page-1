@@ -168,10 +168,12 @@ body {
 
 /* Mobile */
 @media (max-width: 768px) {
-  body {
-    /* display: none; */
-    background-color: black;
-  }
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
   #text {
     position: absolute;
     left: 2%;
@@ -200,3 +202,4 @@ body {
     top: 3%;
   }
 }
+
