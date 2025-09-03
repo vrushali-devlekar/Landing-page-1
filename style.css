@@ -47,8 +47,6 @@ body {
 }
 #text {
   position: absolute;
-  /* background-color: red; */
-  /* width: 350px; */
   left: 6%;
   top: 52%;
   transform: translate(0, -50%);
@@ -138,4 +136,67 @@ body {
 #nav h5 {
   font-size: 20px;
   font-family: Tahoma, sans-serif;
+}
+/* ========================= */
+/* RESPONSIVE DESIGN */
+/* ========================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  #text h1 {
+    font-size: 40px;
+    letter-spacing: 3px;
+    line-height: 42px;
+  }
+
+  #text h1::after {
+    width: 40px;
+    height: 14px;
+  }
+
+  #small-img {
+    height: 250px;
+    width: 180px;
+    right: 3%;
+  }
+
+  #vertical h1 {
+    font-size: 40px;
+    letter-spacing: 5px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  body {
+    /* display: none; */
+    background-color: black;
+  }
+  #text {
+    position: absolute;
+    left: 2%;
+    top: 82%;
+    transform: translate(0, -50%);
+    z-index: 5;
+  }
+  #text h1 {
+    font-size: 30px;
+    letter-spacing: 3px;
+    line-height: 25px;
+  }
+  #text h1::after {
+    display: none;
+  }
+  #vertical {
+    position: absolute;
+    width: 100%;
+    right: -47%;
+    bottom: 48%;
+    z-index: 10;
+    transform-origin: 0% 0%;
+  }
+  #nav {
+    left: 5%;
+    top: 3%;
+  }
 }
